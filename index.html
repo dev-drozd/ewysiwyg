@@ -50,12 +50,18 @@
 				<img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" style="cursor: pointer;">
 			</a>
 		</main>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z905FZVXE0"></script>
 		<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 		<script src="js/EWySiWyg.min.js"></script>
         <script>
 		$(document).ready(() => {
 			$('#EWySiWyg').EWySiWyg();
 		});
-		</script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-Z905FZVXE0');
+	</script>
 	</body>
 </html>
