@@ -1,4 +1,4 @@
-# EWysiwyg
+# EWysiwyg - Jquery plugin
 EWysiwyg the very lightweight and extensible wysiwyg editor:
 
 [Live demo](https://dev-drozd.github.io/ewysiwyg/ "Show demo")
