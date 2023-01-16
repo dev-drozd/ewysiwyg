@@ -1,7 +1,7 @@
 /**
- * GDR WySiWyg editor
+ * EWySiWyg editor
  * Version: 1.0
- * Copyright: GDR LLC.
+ * Copyright: Oleksandr Drozd <dev.drozd@gmail.com>.
 */
 @font-face {
   font-family: 'icons';
@@ -342,6 +342,7 @@ textarea.ewswg-body {
     color: #fff;
     width: 100%;
     background: #4eb980;
+    border: 0;
 }
 
 .ewswg-modal input, .ewswg-modal button {
