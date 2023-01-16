@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Best WYSIWYG jQuery plugin EWySiWyg</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/EWySiWyg.css">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="#" class="mob" onclick="this.parentNode.classList.toggle('open'); return false;">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 32 32" xml:space="preserve" style="height: 30px;fill: #666666;"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"></path></svg>
+				</a>
+				<a href="/">EWySiWyg</a>
+				<a href="#">Download</a>
+				<a href="https://www.facebook.com/dev.drozd" target="_blank">Author</a>
+				<a href="#donate">Donate</a>
+				<a href="https://github.com/dev-drozd/ewysiwyg" class="fl-r" target="_blank">GitHub</a>
+			</nav>
+		</header>
+		<main>
+			<h1 align="center">EWySiWyg</h1>
+			<h2 align="center">The very lightweight and extensible wysiwyg editor</h2>
+			<div class="editor-wrap">
+				<textarea placeholder="Content..." id="EWySiWyg">&lt;h3&gt;About the EWySiWyg&lt;/h3&gt;&lt;p&gt;&lt;b&gt;EWySiWyg&lt;/b&gt; is a modern, fast and easy - size &lt;b&gt;9.8kb&lt;/b&gt; only, while a multifunctional wysiwyg editor written from&nbsp;&lt;a href=&quot;https://wikipedia.org/wiki/JQuery&quot; target=&quot;blank_&quot;&gt;Jquery&lt;/a&gt;. It simplifies the work with the HTML document. Due to its light weight, &lt;b&gt;EWySiWyg&lt;/b&gt; will not be loaded for long if slow or unlimited internet.&lt;/p&gt;</textarea>
+			</div>
+			<h3>Installation:</h3>
+			<p>To install <b>EWySiWyg</b> on a website, you need to add the following lines between the <code>&lt;head&gt;</code> tags:</p>
+			<pre><code>&lt;link rel="stylesheet" href="css/EWySiWyg.css"&gt;
+&lt;script src="js/EWySiWyg.min.js"&gt;&lt;/script&gt;</code></pre>
+		<h3>Initialization:</h3>
+		<p>To get the initialization</p>
+		<pre><code>$("textarea").EWySiWyg();</code></pre>
+		<h3>Expansion</h3>
+		<p>To write your own plugin for <b>EWySiWyg</b>:</p>
+		<pre><code>$.EWySiWyg.methods = function(){
+    return this;
+};</code></pre>
+		<h3 id="#donate">Donate the project:</h3>
+		<p>If you like this project, you can support the author so that he can continue to develop</p>
+			<ul>
+				<li>Revolut: <a href="https://revolut.me/devdrozd" target="_blank">Donate Revolut</a></li>
+				<li>PayPal: <a href="https://www.paypal.com/donate/?hosted_button_id=UQGNYDVPER2TJ" target="_blank">Donate PayPal</a></li>
+				<li>PrivatBank: 4149 6293 3157 1273</li>
+			</ul>
+			<a id="donate-button-container" style="display:block;text-align: center;" href="https://www.paypal.com/donate/?hosted_button_id=UQGNYDVPER2TJ" target="_blank">
+				<img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" style="cursor: pointer;">
+			</a>
+		</main>
+		<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+		<script src="js/EWySiWyg.min.js"></script>
+        <script>
+		$(document).ready(() => {
+			$('#EWySiWyg').EWySiWyg();
+		});
+		</script>
+	</body>
+</html>
